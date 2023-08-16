@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/32576525f7.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        section {
+            max-width: 1100px;
+            background-color: rgb(185, 185, 218);
+            height: 500px;
+            margin: auto;
+        }
+
+        .top {
+            padding: 20px 0px;
+        }
+
+        .title {
+            text-align: center;
+
+        }
+
+        .btn-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .main {
+            width: 70%;
+            border: 2px solid rgb(155, 151, 151);
+            margin: auto;
+        }
+
+        .div-con {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            width: 70%;
+            margin-left: 9%;
+            padding: 10px 0px;
+        }
+
+        #inp-num {
+            width: 30px;
+
+        }
+
+        .text-area {
+            padding: 20px 0px;
+
+        }
+
+        hr {
+            width: 80%;
+            margin-right: 11%;
+
+        }
+
+        #text-area {
+            width: 80%;
+            height: 280px;
+            margin-left: 9%;
+            border: none;
+            font-size: 15px;
+            outline: none;
+
+        }
+
+        .empty {
+            width: 80%;
+            height: 2px;
+            margin-left: 9%;
+            background-color: rgb(155, 151, 151);
+           
+        }
+
+        #bold-btn,
+        #italic-btn,
+        #under-btn,
+        #align-left-btn,
+        #align-center-btn,
+        #align-justify-btn,
+        #align-right-btn,
+        #inp-num,
+        #r,
+        #color-btn,
+        #case{
+            border: none;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="top">
+            <div class="title">
+                <h3>My Text Editor</h3>
+            </div>
+            <div class="main">
+                <div class="div-con">
+                    <div class="btn-div">
+                        <button id="bold-btn"><i class="fa-solid fa-bold"></i></button>
+                        <button id="italic-btn"><i class="fa-solid fa-italic"></i></button>
+                        <button id="under-btn"><i class="fa-solid fa-underline"></i></button>
+                    </div>
+                    <div class="btn-div">
+                        <button id="align-left-btn"><i class="fa-solid fa-align-left"></i></button>
+                        <button id="align-center-btn"><i class="fa-solid fa-align-center"></i></button>
+                        <button id="align-justify-btn"><i class="fa-solid fa-align-justify"></i></button>
+                        <button id="align-right-btn"><i class="fa-solid fa-align-right"></i></button>
+                    </div>
+                    <div class="btn-div">
+                        <input type="number" name="" id="inp-num">
+                        <button id="case"><i class="fa-solid fa-a"></i></button>
+                        <input type="color" name="" id="color-btn">
+                    </div>
+                </div>
+                <div class="empty"></div>
+                <div class="text-area"><textarea name="" id="text-area" cols="81" rows="20"></textarea></div>
+            </div>
+        </div>
+    </section>
+    <script src="./textArea.js"></script>
+</body>
+
+</html>
